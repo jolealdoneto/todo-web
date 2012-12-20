@@ -1,0 +1,39 @@
+!!! html
+html
+    head
+        link(rel='stylesheet', href='/stylesheets/style.css')
+        link(rel='stylesheet', href='/stylesheets/bootstrap.min.css')
+        link(rel='stylesheet', href='/stylesheets/bootstrap-responsive.min.css')
+        script(src='javascripts/jquery.js')
+        script(src='javascripts/jquerymobile.js')
+        script(src='javascripts/bootstrap.min.js')
+        script(src='javascripts/testing.js')
+    body
+        div.modal.hide
+            div.modal-body
+                p Wait please..
+        h1 Todos
+        div.control-group(style="text-align: center")
+            button.btn.btn-large.btn-warning(onclick="location='/todo/refresh'") Update
+
+        form(action='/todo/new', method='get')
+            div.input-prepend.input-append
+                div#dd.btn-group
+                    button.btn.dropdown-toggle(data-toggle='dropdown')
+                        span.text Prio
+                        span.caret
+                    ul.dropdown-menu
+                        li 
+                            a a
+                        li 
+                            a b
+                        li 
+                            a c
+                        li 
+                            a d
+                        li 
+                            a e
+                input#msearch.xx-large(type='text', placeholder="Add new", name='desc')
+                button.btn(type='submit') Add
+        div#todoRes
+            include todolist

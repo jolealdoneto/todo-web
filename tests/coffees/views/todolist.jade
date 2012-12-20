@@ -1,0 +1,6 @@
+table.table
+    each todo, i in mlines
+        tr
+            td.todo(class='prio' + todo[1], lid=i) #{todo[0]}
+                if todo[2]
+                    span.dued #{todo[2]}

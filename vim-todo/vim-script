@@ -2,6 +2,7 @@ function! TodoModus()
     silent "!touch todo.todo"
     silent "!touch done.todo"
     open todo.todo
+    :% ! sort
 endfunction
 function! TodoModusDo()
     let b=line('.')
