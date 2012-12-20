@@ -1,0 +1,12 @@
+VIM-Todo Grobkonzept
+====================
+
+1 Geforderte Funktionalitäten
+    1.1 - 2 Dateien "todo" und "done"
+        1.1.1 - F-Etwas löst den "Modus" aus
+        1.1.2 - touch die zwei
+    1.2 - Priorität
+    1.3 - Fristen setzen
+    1.4 - Projekte trennen
+    1.5 - Tags setzen
+    1.6 - 1 Knopf-tun, Abkürzungen für diesen Funktionalitäten

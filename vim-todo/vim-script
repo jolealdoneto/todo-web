@@ -1,0 +1,12 @@
+function! TodoModus()
+    silent "!touch todo"
+    silent "!touch done"
+    open todo
+endfunction
+function! TodoModusDo()
+    let b=line('.')
+    exe b." !sort >> done"
+endfunction
+
+map <F8> :call TodoModus()<CR>
+map <F9> :call TodoModusDo()<CR>
